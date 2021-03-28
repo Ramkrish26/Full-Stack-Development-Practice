@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta char="utf-8">
+        <title>Java script windows</title>
+        <style>
+            #d1{
+                background-color: aqua;
+            }
+            #d2{
+                background-color: rgb(184, 173, 22);
+            }
+            #d3{
+                background-color: rgb(160, 19, 136);
+            }
+            #d4{
+                background-color: rgb(53, 153, 13);
+            }
+            .Splitbox{
+                float: left;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="d1" class="Splitbox">First</div>
+        <div id="d2" class="Splitbox">Second</div>
+        <div id="d3" class="Splitbox">Third</div>
+        <div id="d4" class="Splitbox">Fourth</div>
+
+        <script>
+            var windowHeight = window.innerHeight;
+            var windowWidth = window.screen.width;
+            for(i=1;i<=4;i++){
+                document.getElementById("d"+i).style.width = windowWidth/4-10 + "px";
+                document.getElementById("d"+i).style.height = windowWidth-10+"px";
+            }            
+        </script>
+    </body>
+</html>

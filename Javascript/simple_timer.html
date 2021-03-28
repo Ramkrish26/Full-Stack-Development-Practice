@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Simple Timer Application</title>
+        <h1>Stop watch</h1>
+        <style>
+            #display{
+                background-color: aqua;
+                width: fit-content;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Enter time limit:
+            <input id="limit" type="number"/>
+        </p>  
+        <p id="butons">
+            <button id="btn1" onclick="StartTimer()">Start</button>  
+            <button id="btn1" onclick="clearInterval(timer)">Stop</button>      
+        </p>    
+        <div id="display">0</div>    
+        <script>           
+            function StartTimer(){
+                var i = 1;
+                limit = document.getElementById("limit").value;                 
+                var timer = setInterval(function(){
+                    if(i<=limit){
+                        r = Math.round(Math.random()*256); 
+                        g = Math.round(Math.random()*256);
+                        b = Math.round(Math.random()*256);
+                        document.getElementById("display").innerHTML = i;
+                        document.getElementById("display").style.backgroundColor = "rgb("+r+","+g+","+b+")";                        
+                        i++;
+                    }                    
+                },1000);                             
+            }
+        </script>
+    </body>
+</html>
