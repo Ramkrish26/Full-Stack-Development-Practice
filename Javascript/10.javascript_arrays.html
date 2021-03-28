@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Javascript Arrays</title>
+    </head>
+    <body>
+        <p id="p1">Shopping list:</p>        
+        <script>
+            var myArray = new Array("Egg","Bread","Juice","pizza");          
+            function AppendArray (val){
+                document.getElementById("p1").innerHTML += "<br/>" + val;
+            }            
+            AppendArray(myArray);
+            AppendArray(myArray[1]);
+            //Delete will remove the value but not the reference
+            delete myArray[1];
+            AppendArray(myArray);
+            myArray[1] = "orange";
+            AppendArray(myArray);
+            //Splice will remove both value and reference
+            myArray.splice(1,1);
+            AppendArray(myArray);
+            //To append values in between the array
+            myArray.splice(1,0,"Banana","Berry");
+            AppendArray(myArray.sort());
+        </script>
+    </body>
+</html>
