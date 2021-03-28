@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>
+        cookies
+    </title>
+</head>
+
+<body>
+    <p id="myParagraph">
+        Javascript.
+    </p>
+    <script>
+        var date = new Date();
+        date.setTime(date.getTime()+(2*24*60*60*1000));
+        var expires = "; expires="+date.toGMTString();
+        document.cookie = "username=John Doe"+expires+";";     
+        window.alert(document.cookie);         
+    </script>
+</body>
+
+</html>

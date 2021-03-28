@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Regular expression</title>
+        <style>
+            #errorMessage{
+                color: #d36363;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="p1">Enter the User name:
+            <input id="name" type="text"/>
+        </p>                
+        <p id="p2">Enter the Password:
+            <input id="pswd" type="password"/>
+        </p>                
+        <button onclick="ValidateUserInput()">Submit</button>
+        <p id="errorMessage">No error message</p>
+        <script>
+            var errorToThrow = "";
+            function ValidateUserInput(){
+                try{
+                var userName = document.getElementById("name").value;
+                var passwordString = document.getElementById("pswd").value;
+                if(!/^[A-Z]/g.test(userName)){
+                    errorToThrow += "<br/>Username should start with capital letter"
+                }
+                if(/\W/g){
+                    errorToThrow += "<br/>Username should contain only alpha numeric values"
+                }
+                if(!/[A-Z]/g.test(userName)){
+                    errorToThrow += "<br/>Password should contain a capital letter"
+                }
+                if(!/\W/g.test(passwordString)){
+                    errorToThrow += "<br/>Password should contain atleast one special character"
+                }
+                if(passwordString.length < 6){
+                    errorToThrow += "<br/>Password should be greater than 6 characters"
+                }     
+                }catch(err){
+                    errorToThrow += err.message;
+                }
+                document.getElementById("errorMessage").innerHTML = errorToThrow;  
+                errorToThrow = "";     
+            }
+        </script>
+    </body>
+</html>
