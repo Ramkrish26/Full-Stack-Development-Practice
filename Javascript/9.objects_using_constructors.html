@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Javascript Objects using constructors</title>
+    </head>
+    <body>
+        <p>Javascript Objects Practice</p>        
+        <script>
+            //Construtor
+            function MyPhone(brand, model, price, color){
+                this.brand = brand;
+                this.model = model;
+                this.price = price;
+                this.color = color;
+                this.RevisedPrice = function(revisedPrice){
+                    this.price = this.price + revisedPrice;
+                }
+            }
+
+            var myPhone = new MyPhone("Samsung","M40",20000,"Blue");
+            window.console.log(myPhone);
+            myPhone.RevisedPrice(10000);
+            window.console.log(myPhone);
+            myPhone.condition = "New";
+            MyPhone.prototype.condition;
+            window.console.log(myPhone);
+        </script>
+    </body>
+</html>

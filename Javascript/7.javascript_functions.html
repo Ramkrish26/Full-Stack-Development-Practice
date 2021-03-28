@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>
+        Swap the contents of two div
+    </title>
+    <style>
+        .bluebox {
+            background-color: #3A5795;
+            color: white;
+            height: 100px;
+            width: auto;
+        }
+
+        .yellowbox {
+            background-color: rgb(222, 224, 85);
+            height: 100px;
+            width: auto;
+        }
+
+        .greenbox {
+            background-color: #31af37;
+            height: 100px;
+            width: auto;
+        }
+
+        .great {
+            background-color: #5a3479;
+        }
+    </style>
+</head>
+<body>
+    <div class="bluebox" id="facebook">
+        <p>
+            Facebook is
+            <span class="great">
+                great
+            </span>
+            .
+        </p>
+    </div>
+    <div class="yellowbox" id="apple">
+        <p>
+            Apple.
+        </p>
+    </div>
+    <div class="greenbox">
+        <p>
+            Microsoft.
+        </p>
+    </div>
+    <button id="button1" onclick="Swap('facebook','apple')">
+        Change facebook and apple content.
+    </button>
+    <button id="button2">
+        Change apple content.
+    </button>
+    <script>
+        function SumTwoNumbers (a,b){
+            return a+b;
+        }
+        function Swap (id1,id2){
+            var first = document.getElementById(id1).innerHTML;
+            var second = document.getElementById(id2).innerHTML;
+            document.getElementById(id1).innerHTML = second;
+            document.getElementById(id2).innerHTML = first;
+        }
+        var sum = SumTwoNumbers(10,10);
+        window.console.log("The sum of two numbers is "+sum);        
+    </script>
+</body>
+</html>

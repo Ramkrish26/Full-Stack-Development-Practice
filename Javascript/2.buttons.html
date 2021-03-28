@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Buttons</title>
+    </head>
+    <body>
+        <p>Javascript using buttons</p>        
+        <button id="button1" onclick="alert('Alert pop up')">Alert pop up</button>
+        <button id="button2">Alert pop up using id</button>
+        <script>
+            document.getElementById("button2").onclick = function(){
+                alert("Pop up using ID");
+            }
+            document.getElementById("button2").onmouseover = function(){
+                document.getElementById("button2").innerHTML = "Alert pop up using id hovered";
+                document.getElementById("button2").style.backgroundColor = "rgb(204,255,204)";
+                document.getElementById("button2").style.fontFamily = "Lucida Console";
+                document.getElementById("button2").style.fontStyle = "italic";
+            }
+        </script>
+    </body>
+</html>
