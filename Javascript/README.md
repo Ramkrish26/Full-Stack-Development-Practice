@@ -1,6 +1,9 @@
 **Javascript notes:**
 1. Regular expression
+ development
 
+
+ master
 **^ - carot** : in the beginning of the string
                 If it is inside [], it denotes NOT
 
