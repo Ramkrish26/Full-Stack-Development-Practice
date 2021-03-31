@@ -2,18 +2,33 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Javascript If and switch statements</title>
+        <title>Javascript For and while loops</title>
     </head>
     <body>
-        <p id="p1">Speed on the highway:
-            <input id="speed" type="number"/>
+        <p id="p1">Enter the range to be displayed using for loop:
+            <input id="iteration" type="number"/>
         </p>                
-        <button onclick="CheckSpeed()">Check Speed</button>
-        <p id="p2">Rating you got:
-            <input id="rate" type="number"/>
+        <button onclick="EnterNumberFor()">Generate numbers using for</button>      
+        <p id="p2">Enter the range to be displayed using while loop:
+            <input id="it2" type="number"/>
         </p>                
-        <button onclick="CheckRating()">Check Rating</button>
+        <button onclick="EnterNumberWhile()">Generate numbers using while</button>  
         <script>
+            function EnterNumberFor(){
+                var number = document.getElementById("iteration").value;
+                for(i=0;i<=number;i++){
+                    document.getElementById("p1").innerHTML += "<br/>"+i;
+                }            
+            }  
+            
+            function EnterNumberWhile(){
+                var number = document.getElementById("it2").value;
+                var i=0
+                while(i<=number){
+                    document.getElementById("p2").innerHTML += "<br/>"+i;
+                    i++;
+                }
+            }
         </script>
     </body>
 </html>
