@@ -20,6 +20,7 @@ console.log(myMap2.has(obj));
 myMap2.delete(add());
 console.log(myMap2);
 myMap2.clear();
+
 console.log(myMap2);
 
 // Iterators
@@ -34,3 +35,5 @@ for (const value of myMap.values())
 
 for (const value of myMap.keys())  
     console.log(value);
+
+console.log(myMap2);
