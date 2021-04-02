@@ -21,3 +21,16 @@ myMap2.delete(add());
 console.log(myMap2);
 myMap2.clear();
 console.log(myMap2);
+
+// Iterators
+for (const value of myMap)
+    console.log(`Value of map = ${value}`);
+
+for (const [key, value] of myMap.entries())  
+    console.log(key, value);
+
+for (const value of myMap.values())  
+    console.log(value);
+
+for (const value of myMap.keys())  
+    console.log(value);
