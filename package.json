@@ -1,0 +1,13 @@
+{
+  "name": "full-stack-development-practice",
+  "version": "1.0.0",
+  "description": "Praticing full stack development",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "author": "Ramakrishnan",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
