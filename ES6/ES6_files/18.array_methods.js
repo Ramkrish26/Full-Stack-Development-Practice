@@ -21,3 +21,30 @@ console.log(arr.copyWithin(3)); // Will copy from first value till the last valu
 
 // TO fill the specified value at a position in an array
 console.log(arr.fill(4,0, 1));
+
+// Slice and Splice method
+let arr = ['a','b','c','d','e'];
+
+// Slice method deletes the specifed values but it doesnt change the original value instead creates new array
+const slicedArr = arr.slice(1,4);
+console.log(slicedArr);
+
+// Splice delete - deletes the specified value but it changes the original array
+arr.splice(2,4)
+console.log(arr);
+
+// Splice insert
+arr.splice(1,0,'R');
+console.log(arr);
+
+// Array filter method used to loop through the array values and return an array that satisfies the condition
+const accepted = arr.filter(function(item){
+    return item > 'c';
+});
+console.log(accepted); // [ 'd', 'e' ]
+
+// Array.find() method returns the first value that satisfies the condition
+const acc1 = arr.find(function(item){
+    return item > 'c';
+});
+console.log(acc1); // d
