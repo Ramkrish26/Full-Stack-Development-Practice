@@ -8,6 +8,27 @@
   "author": "Ramakrishnan",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.5.4"
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.6.3",
+    "eslint": "^7.25.0",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "flag": "^4.4.0",
+    "jest": "^26.6.3",
+    "lite-server": "^2.5.4",
+    "nodemon": "^2.0.7",
+    "react-test-renderer": "^17.0.2"
+  },
+  "dependencies": {
+    "@babel/core": "^7.14.0",
+    "@babel/node": "^7.13.13",
+    "@babel/preset-env": "^7.14.1",
+    "@babel/preset-react": "^7.13.13",
+    "babel-loader": "^8.2.2",
+    "express": "^4.17.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.6.0"
   }
 }
