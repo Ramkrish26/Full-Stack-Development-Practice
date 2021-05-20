@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "description": "Praticing full stack development",
   "scripts": {
-    "start": "lite-server"
+    "build": "webpack",
+    "build:prod": "SET NODE_ENV=production & webpack ./ES6/ES6_files/1.variables.js -o dist/prod_bundle.js"
   },
   "author": "Ramakrishnan",
-  "license": "ISC",
+  "license": "Ram Consolidations",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "babel-jest": "^26.6.3",
+    "css-loader": "^5.2.5",
     "eslint": "^7.25.0",
     "eslint-plugin-react": "^7.23.2",
     "eslint-plugin-react-hooks": "^4.2.0",
@@ -17,7 +19,9 @@
     "jest": "^26.6.3",
     "lite-server": "^2.5.4",
     "nodemon": "^2.0.7",
-    "react-test-renderer": "^17.0.2"
+    "react-test-renderer": "^17.0.2",
+    "style-loader": "^2.0.0",
+    "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
     "@babel/core": "^7.14.0",
@@ -28,6 +32,7 @@
     "express": "^4.17.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "request": "^2.88.2",
     "webpack": "^5.36.2",
     "webpack-cli": "^4.6.0"
   }
