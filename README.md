@@ -1,2 +1,3 @@
 # Full-Stack-Development-Practice
-Practicing full stack development from udemy course
+
+Practising full stack development from Udemy course
