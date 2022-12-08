@@ -25,3 +25,6 @@ jobs:
 
       - name: Lint Markdown files
         run: make lint-markdown
+
+      - name: Editor config check
+        run: make editorconfig-check
