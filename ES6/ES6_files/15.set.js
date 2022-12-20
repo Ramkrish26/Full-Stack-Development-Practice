@@ -3,8 +3,8 @@ let mySet = new Set();
 mySet.add("Ram");
 mySet.add("Krish");
 const obj = {
-    name : "Ram",
-    id : 1
+    name: "Ram",
+    id: 1
 };
 mySet.add(obj);
 console.log(mySet);
@@ -22,10 +22,10 @@ console.log(mySet2);
 for (const value of mySet)
     console.log(value);
 
-for (const [key, value] of mySet.entries())  
+for (const [key, value] of mySet.entries())
     console.log(key, value);
 
-for (const value of mySet.values())  
+for (const value of mySet.values())
     console.log(value);
 
 // Intersection and difference
@@ -41,3 +41,7 @@ set2.add("Development");
 let arr1 = [...set1];
 console.log(`Intersection : ${arr1.filter((item) => set2.has(item))}`);
 console.log(`Difference : ${arr1.filter((item) => set2.has(item))}`);
+
+// Converting set into array
+const newSetArr = [...set1];
+console.log(newSetArr)
