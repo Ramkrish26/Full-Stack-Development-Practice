@@ -27,13 +27,13 @@ console.log(myMap2);
 for (const value of myMap)
     console.log(`Value of map = ${value}`);
 
-for (const [key, value] of myMap.entries())  
+for (const [key, value] of myMap.entries())
     console.log(key, value);
 
-for (const value of myMap.values())  
+for (const value of myMap.values())
     console.log(value);
 
-for (const value of myMap.keys())  
+for (const value of myMap.keys())
     console.log(value);
 
 console.log(myMap2);
