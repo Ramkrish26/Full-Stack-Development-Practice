@@ -1,18 +1,30 @@
+// Classes are not hoisted
+// Classes are first class citizens
+// Classes are executed in strict mode
+
+// Class expression
+const PersonCL = class { }
+
+// Class declaration
+class Person {
+
+}
+
 // ES5
-function car(brand, model, color){
+function car(brand, model, color) {
     this.brand = brand;
     this.model = model;
     this.color = color;
 }
 
 car.prototype = {
-    warrenty : function(item){
-        this.color = item; 
+    warrenty: function (item) {
+        this.color = item;
     }
 }
 
-// Inheritance in ES5   
-function phone (brand, model, os){
+// Inheritance in ES5
+function phone(brand, model, os) {
     this.os = os;
     car.call(this, brand, model, "red");
 }
